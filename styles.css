@@ -50,26 +50,26 @@
 
 .one {
     background-color: rgba(250, 214, 211, 0.5);
-    width: 460px;
-    height: 460px;
     opacity: 1;
+    width: 94%;
+    height: 94%;
     -webkit-animation: pulsate-fwd 1s ease-in-out infinite both ;
 	        animation: pulsate-fwd 1s ease-in-out infinite both;
 }
 
 .two {
     background-color: rgba(252, 204, 165, 0.5);
-    width: 420px;
-    height: 420px;
     opacity: 1;
+    width: 87%;
+    height: 87%;
     -webkit-animation: p-fwd 1s ease-in-out infinite both;
 	        animation: p-fwd 1s ease-in-out infinite both;
 }
 
 .three {
     background: #EF980A;
-    width: 380px;
-    height: 380px;
+    width: 80%;
+    height: 80%;
 }
 
 .three .text {
@@ -84,6 +84,23 @@
     font-size: 1.1rem;
     opacity: 0.6;
     line-height: 25px;
+}
+
+.tray-img {
+    max-width: 80%;
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: -110%;
+    transform: translate(-50%, 110%);
+    overflow: hidden;
+    z-index: 2;
+    
+}
+
+.tray-img img {
+    width: 100%;
+    margin: -150px 0px -250px;
 }
 
 .fruit-tray {
@@ -193,21 +210,9 @@
     position: relative;
 }
 
-.tray-img {
-    max-width: 80%;
-    width: 100%;
-    position: absolute;
-    left: 50%;
-    bottom: -110%;
-    transform: translate(-50%, 110%);
-    overflow: hidden;
-    z-index: 2;
-}
 
-.tray-img img {
-    width: 100%;
-    margin: -150px 0px -250px;
-}
+
+
 
 .section {
     padding: 15%;
@@ -299,6 +304,11 @@
     display: flex;
 }
 
+.flex-cont {
+    display: flex;
+    width: 85%;
+}
+
 .left {
     width: 15%;
     display: flex;
@@ -306,12 +316,12 @@
 }
 
 .middle {
-    width: 35%;
+    width: 41%;
     overflow: hidden;
 }
 
 .right {
-    width: 50%;
+    width: 59%;
     height: 100%;
 }
 
@@ -530,7 +540,7 @@
     position: absolute;
     top: 50%;
     left: 5%;
-    transform: translate(-10%, -50%);
+    transform: translate(-5%, -50%);
 }
 
 .contact-text, .social-text, .message-text {
@@ -584,6 +594,8 @@
 .icon img {
     width: 100%;
     height: 100%;
+    color: #fff;
+
 }
 
 .icons {
@@ -630,30 +642,656 @@
 
 @keyframes pulsate-fwd {
     0% {
-              width: 460px;
-              height: 460px;
+              width: 94%;
+              height: 94%;
     }
     50% {
-              width: 480px;
-              height: 480px;
+              width: 96%;
+              height: 96%;
     }
     100% {
-              width: 460px;
-              height: 460px;
+              width: 94%;
+              height: 94%;
     }
   }
 
   @keyframes p-fwd {
     0% {
-              width: 420px;
-              height: 420px;
+              width: 87%;
+              height: 87%;
     }
     50% {
-              width: 440px;
-              height: 440px;
+              width: 89%;
+              height: 89%;
     }
     100% {
-              width: 420px;
-              height: 420px;
+              width: 87%;
+              height: 87%;
     }
   }
+
+
+
+  @media screen and (max-width: 320px) {
+    .logo {
+        position: relative;
+        width: 120px;
+        height: 120px;
+    }
+
+    .amount {
+        font-size: 12px;
+    }
+}
+
+
+@media screen and (min-width: 425px) {
+
+    .logo {
+        width: 180px;
+        height: 180px;
+    }
+
+    .tray-img {
+        bottom: -52%;
+        transform: translate(-50%, 52%);
+    }
+
+    .section {
+        padding-top: 11%;
+        padding-left: 14%;
+    }
+
+    .btn-others button {
+        width: 70%;
+    }
+
+    .center-circle {
+        width: 120px;
+        height: 120px; 
+    }
+
+    .sub-text {
+        font-size: 7px;
+        line-height: 12px;
+        width: 80%;
+        top: 60%;
+        transform: translate(-50%, -60%);
+    }
+
+   
+}
+
+
+  @media (min-width: 320px) and (max-width: 425px) {
+    .logo {
+        position: relative;
+        width: 150px;
+        height: 150px;
+    }
+
+    .circles {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .indian-img img {
+        margin: 0px 0px -20px 0px;
+    }
+
+    .fruit-tray {
+        display: none;
+    }
+
+
+    .three .text {
+        font-size: 10px;
+        max-width: 80%;
+        line-height: 10px;
+
+    }
+
+    .button {
+        margin-left: 2px;
+         padding: 10px 15px;
+         font-weight: 500;
+         font-size: 10px;
+    }
+
+    .hero {
+        justify-content: center;
+        padding: 10% 8%;
+        padding-bottom: 15%;
+    }
+
+    .statement-section {
+        padding: 0;
+        width: 100%;
+    }
+
+    .red-text {
+        font-size: 14px;
+      line-height: 15px;
+
+    }
+    
+    .green-text {
+        font-size: 13px;
+        line-height: 17px;
+        margin-top: 5%;
+    }
+
+    .desc {
+        display: block;
+    }
+
+    .statement {
+        width: 100%;
+        margin-top: 10%;
+    }
+
+    .tray-img {
+        max-width: 80%;
+        width: 100%;
+        left: 50%;
+        bottom: -48%;
+        transform: translate(-50%, 48%);
+    }
+
+    .tray-img img {
+        width: 100%;
+        margin: -40px 0px -60px;
+    }
+
+    .section {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8%;
+        padding-left: 13%;
+    }
+
+    .latest {
+        padding: 7% 5%;
+        width: 48%;
+
+    }
+
+    .btn-download button {
+        padding: 8px 20px;
+         font-size: 8px;
+         width: 100%;
+         margin-top: 5px;
+
+    }
+
+    .btn-others {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .btn-others button {
+        padding: 8px 30px;
+        font-size: 8px;
+        margin-top: 5%;
+        width: 80%;
+    }
+
+    .late-title {
+        font-size: 13px;
+        width: 80%;
+    }
+
+    .late-label {
+        font-size: 6px;
+        margin-top: 4%;
+    }
+
+    .selections {
+        display: block;
+    }
+
+    .left {
+        flex-direction: row;
+         width: 100%;
+
+    }
+
+    .food {
+        font-size: 10px;
+        padding: 8px 10px;
+        width: 100%;
+        height: 25%;
+    
+    }
+
+    .middle {
+        width: 50%;
+    }
+    
+    .right {
+        width: 50%;
+        height: 100%;
+    }
+
+    .flex-cont {
+        width: 100%;
+    }
+
+    .middle img {
+        transform: scale(1);
+        object-fit: cover;
+    }
+
+    .yam, .asaro {
+        font-size: 17px;
+    }
+
+    .yam {
+        padding: 10% 7% 5%;
+    }
+
+    .asaro {
+        padding: 2% 7%;
+    }
+
+
+    .asaro:after {
+        width: 90%;
+    }
+
+    .serve-container {
+        padding: 5% 7%;
+    }
+
+    .serve {
+        font-size: 13px;
+    }
+
+    .ingredient, .method {
+        font-size: 11px;
+    }
+
+    .method {
+        margin: 10px 0;
+    }
+
+    .point {
+        height: 7px;
+        width: 7px;  
+    }
+
+    .leaf-image img {
+        width: 90%;
+        margin: -40px 0px -40px;
+    
+    }
+
+    .sub-heading {
+        font-size: 14px;
+    }
+
+.sub-text {
+    font-size: 6px;
+    line-height: 10px;
+    width: 80%;
+    top: 65%;
+    transform: translate(-50%, -65%);
+}
+
+    .image-cont img {
+        transform: scale(1.5);
+        margin: -70px 0 -70px;
+    
+    }
+
+    .center-circle {
+        width: 80px;
+        height: 80px; 
+    }
+
+    .xand-text {
+        font-size: 20px;
+    }
+
+    .contact-section {
+        top: 50%;
+        left: 10%;
+        transform: translate(-10%, -50%);
+    }
+
+    .contact-text, .social-text, .message-text {
+        font-size: 8px;
+    }
+
+    .phone {
+        font-size: 7px;
+         margin-top: 5px;
+
+    }
+
+    .mail {
+        font-size: 7px;
+    }
+
+    .social-section{
+        top: 50%;
+        left: 80%;
+        transform: translate(-80%, -50%);
+    }
+
+    .icons {
+        margin: 5px 0;
+    }
+
+    .icon {
+        max-width: 10px;
+        max-height: 10px;
+        margin-right: 5px;
+    }
+
+    .message-text {
+        line-height: 10px;
+        font-size: 6px;
+    }
+
+    .footer-circle {
+        max-width: 40px;
+        max-height: 40px;
+    
+    }
+     
+  }
+
+    
+
+
+  
+@media screen and (min-width: 375px) {
+    .tray-img img {
+        width: 100%;
+        margin: -50px 0px -70px;
+    }
+
+    .tray-img {
+        bottom: -50%;
+        transform: translate(-50%, 50%);
+    }
+
+    .btn-others button {
+        width: 75%;
+    }
+
+    .center-circle {
+        width: 100px;
+        height: 100px; 
+    }
+
+
+}
+
+
+
+
+@media (min-width: 750px) and (max-width: 900px) {
+
+    .logo {
+        position: relative;
+        width: 250px;
+        height: 250px;
+    }
+
+    .three .text {
+        font-size: 14px;
+        max-width: 80%;
+        line-height: 20px;
+
+    }
+
+
+    .button {
+         padding: 13px 35px;
+         font-size: 14px;
+    }
+
+    .circles {
+        top: 50%;
+        left: 52%;
+        transform: translate(-50%, -52%);
+    }
+
+    .indian-img img {
+        margin: 0px 0px -110px 0px;
+    }
+
+    .fruit-tray {
+        top: 60%;
+        left: 0;
+        transform: translate(0, -60%);
+    }
+
+    .fruit-tray img{
+        margin: 0px 0px  0px -180px;
+    }
+
+    .hero {
+        padding: 12% 2%;
+    }
+
+    .statement-section {
+        width: 65%;
+    }
+
+    .red-text {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    
+    .green-text {
+        font-size: 16px;
+        margin: 3% 0;
+    }
+
+    .tray-img {
+        bottom: -75%;
+        transform: translate(-50%, 75%);
+    }
+    
+    .tray-img img {
+        width: 100%;
+        margin: -80px 0px -150px;
+    }
+
+    .section {
+        padding-top: 13%;
+    }
+    
+
+    .late-title {
+        width: 60%;
+    }
+
+.food {
+    font-size: 12px;
+
+}
+
+.statement {
+    width: 45%;
+    margin-top: 5%;
+}
+
+.leaf-image img {
+    width: 90%;
+    margin: -150px 0px -150px;
+
+}
+
+ .sub-heading {
+     font-size: 20px;
+ }
+
+ .sub-text {
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.image-cont img {
+    transform: scale(1.5);
+    margin: -200px 0 -200px;
+
+}
+
+.center-circle {
+    width: 200px;
+    height: 200px;
+
+}
+
+.xand-text {
+    font-size: 50px;
+}
+
+.social-section {
+    left: 80%;
+    transform: translate(-80%, -50%);
+}
+
+   
+}
+
+
+
+@media (min-width: 900px) and (max-width: 1200px) {
+
+    .logo {
+        position: relative;
+        width: 300px;
+        height: 300px;
+    }
+
+    .three .text {
+        font-size: 14px;
+        max-width: 80%;
+        line-height: 20px;
+
+    }
+
+    .indian-img img {
+        margin: 0px 0px -170px 0px;
+    }
+
+    .circles {
+        top: 56%;
+        left: 55%;
+        transform: translate(-56%, -55%);
+    }
+
+    .button {
+        padding: 13px 50px;
+        font-size: 14px;
+   }
+
+   .tray-img {
+    bottom: -110%;
+    transform: translate(-50%, 110%);
+}
+
+    .tray-img img {
+        width: 100%;
+        margin: -110px 0px -180px;
+    }
+
+
+.center-circle {
+    width: 200px;
+    height: 200px;
+
+}
+
+.fruit-tray img{
+    margin: 0px 0px  0px -100px;
+}
+
+.sub-heading {
+    font-size: 25px;
+}
+
+.sub-text {
+    font-size: 14px;
+    line-height: 20px;
+    top: 50%;
+
+}
+
+.leaf-image img {
+    margin: -170px 0px -170px;
+
+}
+
+.xand-text {
+    font-size: 60px;
+}
+
+}
+
+@media screen and (min-width: 1200px) {
+    .logo {
+        width: 500px;
+        height: 500px;
+    }
+
+    .center-circle {
+        width: 300px;
+        height: 300px; 
+    }
+
+    .sub-heading {
+        font-size: 28px;
+        top: 40%;
+        transform: translate(-50%, -40%);
+    }
+    
+    .sub-text {
+        width: 100%;
+        font-size: 14px;
+        line-height: 20px;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .tray-img {
+        position: absolute;
+        left: 50%;
+        bottom: -110%;
+        transform: translate(-50%, 110%);
+    }
+    
+    .tray-img img {
+        width: 100%;
+        margin: -150px 0px -250px;
+    }
+
+   
+
+
+    .section {
+        padding: 15%;
+        padding-bottom: 2%;
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .tray-img {
+        position: absolute;
+        left: 50%;
+        bottom: -90%;
+        transform: translate(-50%, 90%);
+    }
+    
+    .tray-img img {
+        width: 100%;
+        margin: -150px 0px -250px;
+    }
+}
